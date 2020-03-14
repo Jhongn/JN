@@ -1,8 +1,0 @@
-fib :: Integer -> Integer
-fibtail :: Integer -> Integer -> Integer -> Integer
-fib n = fibtail n 0 1
-fibtail n result temp
- | n==0 = result
- | n==1 = temp
- |otherwise = fibtail (n-1) temp (result+temp)
-main = print(fib 6) 
